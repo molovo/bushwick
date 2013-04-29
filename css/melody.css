@@ -48,7 +48,7 @@
 ======================================= */
 
 html, body {
-  font: 22px/1.5em "skolar", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 22px/1.5em "skolar", "Georgia", "Times New Roman", serif;
 }
 
 h1 {
@@ -87,7 +87,7 @@ p, ul, ol, dl, blockquote {
 
     em { font-style: italic; }
     strong { font-weight: 600; }
-    small { font-size: .6em; line-height: 1.5em; font-family: "proxima-nova"; }
+    small { font-size: .6em; line-height: 1.5em; font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
     .center { text-align: center; }
     .lalign { text-align: left; }
@@ -126,7 +126,7 @@ p, ul, ol, dl, blockquote {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    letter-spacing: -.25em; /* Fixes spacing issues with display: inline-block; */
+    letter-spacing: -.35em; /* Fixes spacing issues with display: inline-block; */
   }
 
 
@@ -146,7 +146,7 @@ p, ul, ol, dl, blockquote {
   .container header:not(.grid),
   .container footer:not(.grid),
   .force-grid {
-    letter-spacing: -.25em;
+    letter-spacing: -.35em;
     width: 100%;
   }
   .container section:not(.grid) > *,

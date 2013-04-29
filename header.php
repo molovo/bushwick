@@ -12,7 +12,7 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700|Quando' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Kreon:400,700|Noto+Serif:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700|Quando' rel='stylesheet' type='text/css'>
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
