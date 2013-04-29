@@ -46,6 +46,8 @@
 	    			$('a[href="#menu"]').toggleClass('current');
 	    			$('.slidey').slideToggle(300);
 	    		});
+
+	    		$('section.content ol').not('.items').children('li').wrapInner('<p>');
 	    	});
 	    </script>
     </body>

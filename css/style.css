@@ -240,7 +240,63 @@ footer#bottom {
 .remove-bottom {
 	margin-bottom: 0;
 }
+section.content ul {
+    list-style: none;
+    padding:0;
+    margin:0 0 1.5em;
+}
 
+section.content ul:not(.items) li {
+    padding-left: 3em;
+    text-indent: -.7em;
+}
+
+section.content ul:not(.items) li:before {
+    content: "• ";
+    color: #72CCA7; /* or whatever color you prefer */
+}
+/*section.content ul {
+	list-style: circle inside;
+	list-style-color: #72CCA7;
+}*/
+
+section.content ol {
+	list-style: lower-roman outside;
+	list-style-color: #72CCA7;
+	margin-left: 3em;
+}
+
+section.content ol li {
+	font-family: "proxima-nova";
+	color: #72CCA7;
+	font-size: .75em;
+	font-weight: 700;
+}
+
+section.content ol li > p {
+	font-family: "skolar";
+	color: rgb(51,71,61);
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+section.content blockquote {
+	font-style: italic;
+	color: rgba(51,71,61,0.5);
+	padding-left: 1.5em;
+	border-left: 5px solid #72CCA7;
+}
+
+blockquote cite {
+	font-family: "proxima-nova";
+	font-style: normal;
+	font-size: .75em;
+	color: rgb(51,71,61);
+}
+
+blockquote cite:before {
+	content: "\2014 \0020";
+}
 
 pre {
 	margin-bottom: 1.5em;
@@ -250,12 +306,12 @@ pre {
 	padding: 1.5em 3em;
 	color: white;
 	border-radius: 3px;
-	font-size: .75em;
 	opacity: .3;
 }
 code {
 	font-family: monospace;
 	border-bottom: rgba(255,255,255,0.1);
+	font-size: .75em;
 }
 
 .icon, a.icon, nav a.icon, .sidebar nav a.icon {
