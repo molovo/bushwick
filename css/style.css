@@ -332,6 +332,18 @@ code {
 	font-style: normal;
 }
 
-.ie {
-	background: blue;
+/* IE Overrides */
+	.ie .sidebar, .ie .main {
+		position: absolute;
+		top: 0px;
+	}
+	.ie .sidebar {
+		width: 40%;
+		height: 100%;
+		position: fixed;
+	}
+	.ie .main {
+		width: 60%;
+		right: 0px;
+	}
 }
