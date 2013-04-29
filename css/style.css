@@ -346,4 +346,13 @@ code {
 		width: 60%;
 		right: 0px;
 	}
+	.ie nav.sidebar-nav a:not(.home) {
+		display: none;
+	}
+	.ie .slidey a.menu {
+		display: none;
+	}
+	.ie a:hover {
+		color: #10A296;
+	}
 }
