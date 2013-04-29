@@ -331,3 +331,7 @@ code {
 	font-weight: normal;
 	font-style: normal;
 }
+
+.ie {
+	background: blue;
+}

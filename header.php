@@ -144,7 +144,8 @@
 				>Latest Post</a>';
 		?>
 	</head>
-	<body>
+
+	<body <!--[if lt IE 9]>class="ie"<![endif]-->>
 
 		<div class="sidebar">
 			<nav class="sidebar-nav">
