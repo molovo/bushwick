@@ -50,5 +50,14 @@
 	    		$('section.content ol').not('.items').children('li').wrapInner('<p>');
 	    	});
 	    </script>
+
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				jQuery(document).ready(function($) {
+					$('body').addClass('ie');
+				});
+			</script>
+		<![endif]-->
     </body>
 </html>

@@ -14,14 +14,7 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Kreon:400,700|Noto+Serif:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700|Quando' rel='stylesheet' type='text/css'>
 
-		<!--[if lt IE 9]>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<script>
-				jQuery(document).ready(function($) {
-					$('body').addClass('ie');
-				});
-			</script>
-		<![endif]-->
+
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
 		<script type="text/javascript" src="//use.typekit.net/qkg7ens.js"></script>
