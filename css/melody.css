@@ -79,7 +79,7 @@ h5 {
 h6 {
     font-size: 1em; /* 16 / 16 */
     line-height: 1.5em; /* 24 / 16 */
-    /*margin-bottom: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
 }
 p, ul, ol, dl, blockquote {
     margin-bottom: 1.5em; /* 24 / 16 */
