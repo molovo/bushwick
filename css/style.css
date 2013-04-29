@@ -84,6 +84,7 @@ hr {
 @media (max-width: 1023px) {
 	nav.sidebar-nav {
 		padding-right: 6em !important;
+		margin-right: -6em !important;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;

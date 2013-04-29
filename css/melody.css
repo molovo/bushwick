@@ -126,7 +126,7 @@ p, ul, ol, dl, blockquote {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    letter-spacing: -.35em; /* Fixes spacing issues with display: inline-block; */
+    letter-spacing: -.25em; /* Fixes spacing issues with display: inline-block; */
   }
 
 
@@ -146,7 +146,7 @@ p, ul, ol, dl, blockquote {
   .container header:not(.grid),
   .container footer:not(.grid),
   .force-grid {
-    letter-spacing: -.35em;
+    letter-spacing: -.25em;
     width: 100%;
   }
   .container section:not(.grid) > *,
