@@ -81,6 +81,14 @@ hr {
 		text-decoration: none;
 	}
 
+@media (max-width: 1023px) {
+	nav.sidebar-nav {
+		padding-right: 6em !important;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
 @media (min-width: 1024px) {
 	.sidebar, .main {
 		position: absolute;
@@ -302,11 +310,9 @@ pre {
 	margin-bottom: 1.5em;
 	white-space: pre-wrap;
 	display: block;
-	background: #72CCA7;
-	padding: 1.5em 3em;
-	color: white;
+	color: #72CCA7;
+	padding: .75em 1.5em;
 	border-radius: 3px;
-	opacity: .3;
 }
 code {
 	font-family: monospace;

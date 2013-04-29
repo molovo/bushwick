@@ -146,7 +146,7 @@
 	<body>
 
 		<div class="sidebar">
-			<nav class="sidebar-nav">
+			<nav class="grid 1of1 sidebar-nav">
 				<a href="<?php echo base_url(); ?>" class="home <?php echo (is_homepage() ? 'current' : '') ?>">HOME</a>
 
 				<?php echo $latestPostLink; ?>
