@@ -16,6 +16,11 @@
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				jQuery(document).ready(function($) {
+					$('body').addClass('ie');
+				});
+			</script>
 		<![endif]-->
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
@@ -145,7 +150,7 @@
 		?>
 	</head>
 
-	<body <!--[if lt IE 9]>class="ie"<![endif]-->>
+	<body>
 
 		<div class="sidebar">
 			<nav class="sidebar-nav">
