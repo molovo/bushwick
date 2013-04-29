@@ -1,0 +1,348 @@
+/* ---------------------------------------
+  Melody - Yet another CSS framework
+--------------------------------------- */
+
+
+
+/* First, reset some default styles.
+================================================== */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+
+    /* Lets make fonts look pretty by default */
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  body {
+    line-height: 1; }
+  ol, ul {
+    list-style: none; }
+  blockquote, q {
+    quotes: none; }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none; }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+
+
+/* Add some basic typography.
+======================================= */
+
+html, body {
+  font: 22px/1.5em "skolar", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em; /* 48 / 16 */
+    line-height: 1em; /* 48 / 48 */
+    margin-bottom: .5em; /* 24 / 48 */
+}
+h2 {
+    font-size: 2.25em; /* 36 / 16 */
+    line-height: 1.333333333333333em; /* 48 / 36 */
+    margin-bottom: .6666666666666667em; /* 24 / 36 */
+}
+h3 {
+    font-size: 1.5em; /* 24 / 16 */
+    line-height: 1em; /* 24 / 24 */
+    margin-bottom: 1em; /* 24 / 24 */
+}
+h4 {
+    font-size: 1.3125em; /* 21 / 16 */
+    line-height: 1.142857142857143em; /* 24 / 21 */
+    margin-bottom: 1.142857142857143em; /* 24 / 21 */
+}
+h5 {
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.333333333333333em; /* 24 / 18 */
+    margin-bottom: 1.333333333333333em; /* 24 / 18 */
+}
+h6 {
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    /*margin-bottom: 1.5em; /* 24 / 16 */
+}
+p, ul, ol, dl, blockquote {
+    margin-bottom: 1.5em; /* 24 / 16 */
+}
+
+    em { font-style: italic; }
+    strong { font-weight: 600; }
+    small { font-size: .6em; line-height: 1.5em; font-family: "proxima-nova"; }
+
+    .center { text-align: center; }
+    .lalign { text-align: left; }
+    .ralign { text-align: right; }
+
+
+
+/* Adjust font sizes for different screen sizes
+=================================================== */
+
+  @media (max-width: 960px) {
+    body {
+      font-size: 95%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    body {
+      font-size: 85%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 80%;
+    }
+  }
+
+
+
+/* Build our container.
+======================================= */
+
+  .container {
+    width: 90%;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    letter-spacing: -.25em; /* Fixes spacing issues with display: inline-block; */
+  }
+
+
+  /* Reset letter spacing for elements in container but not in grid */
+
+  .container > * {
+    letter-spacing: 0px;
+  }
+
+  /* Fixes letter spacing bug for HTML5 elements */
+  /* Also sets a baseline of 100% width to fix android bug where they don't resize with the container */
+
+  .container section:not(.grid),
+  .container aside:not(.grid),
+  .container nav:not(.grid),
+  .container article:not(.grid),
+  .container header:not(.grid),
+  .container footer:not(.grid),
+  .force-grid {
+    letter-spacing: -.25em;
+    width: 100%;
+  }
+  .container section:not(.grid) > *,
+  .container aside:not(.grid) > *,
+  .container nav:not(.grid) > *,
+  .container article:not(.grid) > *,
+  .container header:not(.grid) > *,
+  .container footer:not(.grid) > *,
+  .force-grid > * {
+    letter-spacing: 0px;
+  }
+
+
+
+/* Base styles for all grid components.
+======================================= */
+
+  .container .grid {
+    display: inline-block;
+    padding: 1.5em;
+    margin: 0;
+    vertical-align: top;
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .container .grid:not(.force-grid) {
+    letter-spacing: 0px; /* Resets letter spacing */
+  }
+
+  .container .grid.remove-padding {
+    padding: 0;
+  }
+
+
+
+/* Set sizes for each component of grid.
+
+  (first character numerals are escaped as follows:
+  '\31 ' = '1' )
+
+  .grid defaults to equal .1of12
+======================================= */
+
+  .grid, .grid.\31 of12 {
+    width: 8.3333%;
+  }
+  .grid.\32 of12, .grid.\31 of6 {
+    width: 16.6667%;
+  }
+  .grid.\33 of12, .grid.\31 of4 {
+    width: 25%;
+  }
+  .grid.\34 of12, .grid.\32 of6, .grid.\31 of3 {
+    width: 33.3333%;
+  }
+  .grid.\35 of12 {
+    width: 41.6667%;
+  }
+  .grid.\36 of12, .grid.\33 of6, .grid.\32 of4, .grid.\31 of2 {
+    width: 50%;
+  }
+  .grid.\37 of12 {
+    width: 58.3333%;
+  }
+  .grid.\38 of12, .grid.\34 of6, .grid.\32 of3 {
+    width: 66.6667%;
+  }
+  .grid.\39 of12, .grid.\33 of4 {
+    width: 75%;
+  }
+  .grid.\31 0of12, .grid.\35 of6 {
+    width: 83.3333%;
+  }
+  .grid.\31 1of12 {
+    width: 96.6667%;
+  }
+  .grid.\31 2of12, .grid.\36 of6, .grid.\34 of4, .grid.\33 of3, .grid.\32 of2, .grid.\31 of1 {
+    width: 100%;
+  }
+
+
+
+/* Offset classes for grid components.
+======================================= */
+
+  .grid.offset-1 {
+    margin-left: 8.3333%;
+  }
+  .grid.offset-2 {
+    margin-left: 16.6666%;
+  }
+  .grid.offset-3 {
+    margin-left: 25%;
+  }
+  .grid.offset-4 {
+    margin-left: 33.3333%;
+  }
+  .grid.offset-5 {
+    margin-left: 41.6666%;
+  }
+  .grid.offset-6 {
+    margin-left: 50%;
+  }
+  .grid.offset-7 {
+    margin-left: 58.3333%;
+  }
+  .grid.offset-8 {
+    margin-left: 66.6666%;
+  }
+  .grid.offset-9 {
+    margin-left: 75%;
+  }
+  .grid.offset-10 {
+    margin-left: 83.3333%;
+  }
+  .grid.offset-11 {
+    margin-left: 96.6666%;
+  }
+  .grid.offset-12 {
+    margin-left: 100%;
+  }
+
+
+
+/* Collapse grid for mobile.
+======================================= */
+
+  @media screen and (max-width: 700px) {
+
+    /* Collapse grid to 100% width for
+       smaller screen sizes.
+
+       Use class .stick-to-grid to stop grid cells
+       from collapsing. */
+
+    .container .grid:not(.stick-to-grid) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+
+
+/* Widen grid to 1280px for large screens.
+======================================= */
+
+  @media screen and (min-width: 1300px) {
+
+    /* Widen container */
+
+    .container {
+      max-width: 1280px;
+    }
+
+
+
+    /* Add additional padding to .keep-shape elements
+       to keep to same size as 960 grid version */
+
+    .grid.keep-shape, .grid.\31 of12.keep-shape {
+      padding: 30px 28.3333px;
+    }
+    .grid.\32 of12.keep-shape, .grid.\31 of6.keep-shape {
+      padding: 30px 41.6667px;
+    }
+    .grid.\33 of12.keep-shape, .grid.\31 of4.keep-shape {
+      padding: 30px 55px;
+    }
+    .grid.\34 of12.keep-shape, .grid.\32 of6.keep-shape, .grid.\31 of3.keep-shape {
+      padding: 30px 68.3333px;
+    }
+    .grid.\35 of12.keep-shape {
+      padding: 30px 81.6667px;
+    }
+    .grid.\36 of12.keep-shape, .grid.\33 of6.keep-shape, .grid.\32 of4.keep-shape, .grid.\31 of2.keep-shape {
+      padding: 30px 95px;
+    }
+    .grid.\37 of12.keep-shape {
+      padding: 30px 108.3333px;
+    }
+    .grid.\38 of12.keep-shape, .grid.\34 of6, .grid.\32 of3.keep-shape {
+      padding: 30px 121.6667px;
+    }
+    .grid.\39 of12.keep-shape, .grid.\33 of4.keep-shape {
+      padding: 30px 135px;
+    }
+    .grid.\31 0of12.keep-shape, .grid.\35 of-six.keep-shape {
+      padding: 30px 148.3333px;
+    }
+    .grid.\31 1of12.keep-shape {
+      padding: 30px 161.6667px;
+    }
+    .grid.\31 2of12.keep-shape, .grid.\36 of6.keep-shape, .grid.\34 of4.keep-shape, .grid.\33 of3.keep-shape, .grid.\32 of2.keep-shape, .grid.\31 of1.keep-shape {
+      padding: 30px 175px;
+    }
+  }

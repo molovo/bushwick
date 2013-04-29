@@ -1,0 +1,5 @@
+Theme name:    Bushwick
+Description:   A theme. For Blogz and ting.
+Author name:   James Dinsdale
+Author site:   http://molovo.co.uk
+License:       http://licence.visualidiot.com
