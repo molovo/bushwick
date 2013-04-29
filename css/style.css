@@ -52,7 +52,7 @@ hr {
 }
 	.sidebar > .container {
 		position: absolute;
-		bottom: 0px;
+		bottom: 3em;
 		left: 5%;
 	}
 	.sidebar nav.sidebar-nav {
