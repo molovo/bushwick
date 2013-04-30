@@ -15,9 +15,7 @@
 	                	</small>
 	                </div>
 
-					<div class="grid 1of3"></div>
-
-					<div class="grid 1of3">
+					<div class="grid 1of3 offset-4">
 						<small>
 			                <ul role="navigation">
 			                    <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
