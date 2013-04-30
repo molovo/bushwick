@@ -48,7 +48,7 @@
 ======================================= */
 
 html, body {
-  font: 22px/1.5em "skolar", "Georgia", "Times New Roman", serif;
+  font: 20px/1.5em "Merriweather", "Skolar", "ff-tisa-web-pro", "Georgia", "Times New Roman", serif;
 }
 
 h1 {
@@ -87,7 +87,7 @@ p, ul, ol, dl, blockquote {
 
     em { font-style: italic; }
     strong { font-weight: 600; }
-    small { font-size: .6em; line-height: 1.5em; font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+    small { font-size: .6em; line-height: 1.5em; font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
     .center { text-align: center; }
     .lalign { text-align: left; }

@@ -8,7 +8,7 @@
 			<li>
 				<article class="latest-article-preview">
 					<h1>
-						<!--<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">--><?php echo article_title(); ?><!--</a>-->
+						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
 
 					<p class="content">
@@ -32,7 +32,7 @@
 				<article class="article-preview">
 					<div class="grid 2of3 stick-to-grid remove-padding">
 						<h3 class="remove-bottom">
-							<!--<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">--><?php echo article_title(); ?><!--</a>-->
+							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 						</h3>
 
 						<footer>
@@ -42,7 +42,7 @@
 						</footer>
 					</div>
 					<div class="grid 1of3 stick-to-grid remove-padding center">
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" class="buttonlink">Read this Article</a>
+						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" class="buttonlink">Read</a>
 					</div>
 				</article>
 			</li>

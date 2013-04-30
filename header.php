@@ -8,17 +8,16 @@
 
 		<link rel="stylesheet" href="<?php echo theme_url('/css/melody.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/fonts/merriweather-fontfacekit/stylesheet.css'); ?>">
 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
-		<link href='http://fonts.googleapis.com/css?family=Kreon:400,700|Noto+Serif:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700|Quando' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900|Fenix' rel='stylesheet' type='text/css'>
 
 
 
 		<script>var base = '<?php echo theme_url(); ?>';</script>
-		<script type="text/javascript" src="//use.typekit.net/qkg7ens.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	    <meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
@@ -74,11 +73,11 @@
 					color: rgb(51,71,61);
 					text-shadow: 0px 0px 0px transparent;
 				}
-				.sidebar a {
-					color: rgb(51,71,61);
+				.sidebar a, .sidebar h1, .sidebar h4 {
+					color: #774553;
 				}
 				.sidebar a.current {
-					color: #72CCA7;
+					color: #C38596;
 				}
 			</style>
 		<?php elseif (page_slug() == 'search'): ?>
@@ -153,7 +152,8 @@
 
 				<?php if(has_menu_items()): ?>
 					<?php while(menu_items()): ?>
-						<a href="<?php echo menu_url(); ?>" class="<?php echo (menu_active() ? 'current' : '') ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
+						<a href="<?php echo menu_url(); ?>" class="<?php echo (menu_active() ? 'current' : '') ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?>
+						</a>
 					<?php endwhile; ?>
 				<?php endif; ?>
 
@@ -174,7 +174,7 @@
 						</p>
 					<?php else: ?>
 						<h1><?php echo site_name(); ?></h1>
-						<h4><?php echo site_description(); ?></h4>
+						<p><?php echo site_description(); ?></p>
 					<?php endif; ?>
 				</div>
 			</div>
@@ -228,7 +228,7 @@
 
 						<?php if(has_menu_items()): ?>
 							<?php while(menu_items()): ?>
-								<a href="<?php echo menu_url(); ?>" class="<?php echo (menu_active() ? 'current' : ''); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
+								<a href="<?php echo menu_url(); ?>" class="<?php echo (menu_active() ? 'current' : '') ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
 							<?php endwhile; ?>
 						<?php endif; ?>
 

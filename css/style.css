@@ -1,10 +1,10 @@
 /*
 	# COLORS
 	Red: #F06060
-	Orange: #FA987D
+	Pink: #C38596
 	Cream: #F7F2CB
-	Green: #72CCA7
-	Teal: #10A296
+	Plum: #774553
+	Blue: #68ADC3
 */
 
 html, body {
@@ -16,18 +16,28 @@ html, body {
 
 a, a:visited {
 	text-decoration: none;
-	color: #72CCA7;
+	color: #68ADC3;
 	font-weight: 700;
 }
 	*:not(nav) > a:hover {
 		text-decoration: underline;
 	}
 	*:not(.sidebar) > a:hover {
-		color: #10A296;
+		color: #68ADC3;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
+	font-weight: 900;
+	color: #774553;
+	font-family: "Merriweather";
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
+h1 > a:visited, h2 > a:visited, h3 > a:visited, h4 > a:visited, h5 > a:visited, h6 > a:visited,
+a > h1, a > h2, a > h3, a > h4, a > h5, a > h6,
+a:visited > h1, a:visited > h2, a:visited > h3, a:visited > h4, a:visited > h5, a:visited > h6 {
+	color: #C38596;
+	font-weight: 900;
 }
 
 hr {
@@ -62,8 +72,8 @@ hr {
 		padding: 1.5em;
 	}
 	.sidebar nav.sidebar-nav a {
-		font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-		font-weight: 700;
+		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+		font-weight: 900;
 		margin-right: 1.5em;
 		text-transform: uppercase;
 		padding-bottom: .25em;
@@ -79,6 +89,9 @@ hr {
 	}
 	.article-links a:hover {
 		text-decoration: none;
+	}
+	.sidebar h1, .sidebar h4 {
+		color: white;
 	}
 
 @media (max-width: 1023px) {
@@ -124,7 +137,7 @@ section.content {
 			top: 0px;
 			left: 0px;
 			z-index: 999;
-			background: #72CCA7;
+			background: #774553;
 			color: white;
 		}
 		.slidey a {
@@ -137,7 +150,7 @@ section.content {
 		}
 	}
 	.slidey a {
-		font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 		font-size: .75em;
 		text-transform: uppercase;
 	}
@@ -160,10 +173,10 @@ section.content {
 	}
 
 nav.top-nav a {
-	font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-weight: 700;
+	font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: 900;
 	text-transform: uppercase;
-	color: #72CCA7;
+	color: #774553;
 	margin-right: 1.5em;
 	padding-bottom: .25em;
 	margin-bottom: .75em;
@@ -173,13 +186,13 @@ nav.top-nav a {
 	border-bottom: 5px solid transparent;
 }
 	nav.top-nav a:not(.menu):hover {
-		border-bottom: 5px solid #FA987D;
+		border-bottom: 5px solid #C38596;
 	}
 	nav.sidebar-nav a:not(.menu):hover {
 		border-bottom: 5px solid white;
 	}
 	nav.top-nav a.current, nav.top-nav a.menu:hover {
-		color: #FA987D;
+		color: #C38596;
 	}
 	nav a.menu {
 		float: right;
@@ -210,39 +223,56 @@ aside.tldr p {
 		position: absolute;
 		top: 0;
 		left: 0;
-		font-size: .75em;
-		font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+		font-size: .6em;
+		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 		font-style: normal;
-		font-weight: 700;
-		color: #72CCA7;
+		font-weight: 900;
+		color: #C38596;
 		white-space: nowrap;
 		padding-top: .1em;
 	}
 
 a.buttonlink, a[title="pdf"], a[title="audio"], input[type="submit"] {
-	background: #72CCA7;
-	padding: .25em .75em .1em;
+	background: #774553;
+	padding: .25em 1.5em;
 	border-radius: 3px;
-	font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: .75em;
 	color: white;
 	margin: .75em 0;
 	display: inline-block;
 	border: 0;
+	font-weight: 400;
 }
 	a.buttonlink:hover, a[title="pdf"]:hover, a[title="audio"]:hover, input[type="submit"]:hover {
-		background: #10A296;
+		background: #68ADC3;
 		color: white;
 	}
-	input[type="submit"] {
-		padding: .25em .75em;
+	a[title="pdf"], a[title="audio"] {
+		padding-left: 3em;
+		position: relative;
+	}
+	a[title="pdf"]:before, a[title="audio"]:before {
+		font-family: "icomoon";
+		position: absolute;
+		top: .2em;
+		left: 1.25em;
+	}
+	a[title="pdf"]:hover:before, a[title="audio"]:hover:before {
+		text-decoration: none;
+	}
+	a[title="pdf"]:before {
+		content: 'P';
+	}
+	a[title="audio"]:before {
+		content: 'A';
 	}
 
 footer#bottom {
 	border-top: 1px solid rgba(51,71,61,0.05);
 }
 	/*footer#bottom ul a {
-		font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 		font-size: .75em;
 	}*/
 
@@ -262,42 +292,96 @@ section.content ul:not(.items) li {
 
 section.content ul:not(.items) li:before {
     content: "• ";
-    color: #72CCA7; /* or whatever color you prefer */
+    color: #C38596; /* or whatever color you prefer */
 }
 /*section.content ul {
 	list-style: circle inside;
-	list-style-color: #72CCA7;
+	list-style-color: #774553;
 }*/
 
 section.content ol {
 	list-style: lower-roman outside;
-	list-style-color: #72CCA7;
+	list-style-color: #774553;
 	margin-left: 3em;
 }
 
 section.content ol li {
-	font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	color: #72CCA7;
+	font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #C38596;
 	font-size: .75em;
 	font-weight: 700;
 }
 
 section.content ol li > p {
-	font-family: "skolar", "Georgia", "Times New Roman", serif;
+	font-family: "Merriweather", "Skolar", "Georgia", "Times New Roman", serif;
 	color: rgb(51,71,61);
 	font-size: 1rem;
 	font-weight: 400;
+	margin-bottom: 0;
 }
 
 section.content blockquote {
 	font-style: italic;
 	color: rgba(51,71,61,0.5);
 	padding-left: 1.5em;
-	border-left: 5px solid #72CCA7;
+	border-left: 5px solid #C38596;
+}
+
+section.content .image-wrapper {
+	margin-bottom: 1.5em;
+	position: relative;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	max-width: 100%;
+}
+
+section.content .image-wrapper img {
+	max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+	section.content .image-wrapper.left {
+		float: left;
+		margin: 0 1.5em 3em 0;
+	}
+
+	section.content .image-wrapper.right {
+		float: right;
+		margin: 0 0 3em 1.5em;
+	}
+
+}
+
+@media (min-width: 768px) {
+	section.content .image-wrapper.left,
+	section.content .image-wrapper.right {
+		max-width: 50%;
+	}
+}
+
+section.content .image-wrapper.full,
+section.content .image-wrapper.full img {
+	width: 100%;
+}
+
+section.content .image-wrapper figcaption {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	display: block;
+	font-size: .75em;
+	line-height: 1.5em;
+	padding: 0 .75em .75em;
+	box-sizing: border-box;
 }
 
 blockquote cite {
-	font-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-style: normal;
 	font-size: .75em;
 	color: rgb(51,71,61);
@@ -311,7 +395,7 @@ pre {
 	margin-bottom: 1.5em;
 	white-space: pre-wrap;
 	display: block;
-	color: #72CCA7;
+	color: #774553;
 	padding: .75em 1.5em;
 	border-radius: 3px;
 }
@@ -360,6 +444,6 @@ code {
 		display: none;
 	}
 	.ie a:hover {
-		color: #10A296;
+		color: #68ADC3;
 	}
 }
