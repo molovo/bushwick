@@ -169,8 +169,8 @@
 							<?php echo article_date(); ?>
 						</p>
 						<p class="grid 1of4 stick-to-grid remove-padding ralign article-links">
-							<a href="<?php echo article_previous_url(); ?>">&larr;</a>
-							<a href="<?php echo article_next_url(); ?>">&rarr;</a>
+							<a<?php echo (article_previous_url() ? ' href="' . article_previous_url() . '"' : ''); ?>>&larr;</a>
+							<a<?php echo (article_next_url() ? ' href="' . article_next_url() . '"' : ''); ?>>&rarr;</a>
 						</p>
 					<?php else: ?>
 						<h1><?php echo site_name(); ?></h1>
@@ -190,7 +190,7 @@
 						<form id="search" action="<?php echo search_url(); ?>" method="post">
 							<label for="term">Search my blog:</label>
 							<input type="text" id="term" name="term" placeholder="<?php echo (search_term() ? search_term() : 'To search, type and hit enter&hellip;'); ?>" />
-							<input type="submit" value="Go" />
+							<button type="submit" value="Go">Go</button>
 						</form>
 					</aside>
 

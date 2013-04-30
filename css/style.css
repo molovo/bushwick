@@ -25,6 +25,9 @@ a, a:visited {
 	*:not(.sidebar) > a:hover {
 		color: #68ADC3;
 	}
+	a:not([href]) {
+		opacity: .1;
+	}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
@@ -232,9 +235,9 @@ aside.tldr p {
 		padding-top: .1em;
 	}
 
-a.buttonlink, a[title="pdf"], a[title="audio"], input[type="submit"] {
+a.buttonlink, a[title="pdf"], a[title="audio"], button {
 	background: #774553;
-	padding: .25em 1.5em;
+	padding: .25em 1.5em .3em;
 	border-radius: 3px;
 	font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: .75em;
@@ -243,8 +246,13 @@ a.buttonlink, a[title="pdf"], a[title="audio"], input[type="submit"] {
 	display: inline-block;
 	border: 0;
 	font-weight: 400;
+	-webkit-transition: background .15s ease-in-out;
+	   -moz-transition: background .15s ease-in-out;
+	    -ms-transition: background .15s ease-in-out;
+	     -o-transition: background .15s ease-in-out;
+	        transition: background .15s ease-in-out;
 }
-	a.buttonlink:hover, a[title="pdf"]:hover, a[title="audio"]:hover, input[type="submit"]:hover {
+	a.buttonlink:hover, a[title="pdf"]:hover, a[title="audio"]:hover, button:hover {
 		background: #68ADC3;
 		color: white;
 	}
@@ -255,7 +263,7 @@ a.buttonlink, a[title="pdf"], a[title="audio"], input[type="submit"] {
 	a[title="pdf"]:before, a[title="audio"]:before {
 		font-family: "icomoon";
 		position: absolute;
-		top: .2em;
+		top: .3em;
 		left: 1.25em;
 	}
 	a[title="pdf"]:hover:before, a[title="audio"]:hover:before {
