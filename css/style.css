@@ -71,8 +71,9 @@ hr {
 	.sidebar nav.sidebar-nav {
 		position: absolute;
 		top: 0px;
-		left: 5%;
-		padding: 1.5em;
+		width: 100%;
+		margin: 0 auto;
+		padding: 1.5em 3em;
 	}
 	.sidebar nav.sidebar-nav a {
 		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -99,8 +100,8 @@ hr {
 
 @media (max-width: 1023px) {
 	nav.sidebar-nav {
-		padding-right: 6em !important;
-		margin-right: -6em !important;
+		/*padding-right: 6em !important;
+		margin-right: -6em !important;*/
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
@@ -146,6 +147,9 @@ section.content {
 		.slidey a {
 			color: white;
 		}
+		.slidey h5 {
+			color: white;
+		}
 	}
 	@media (min-width: 1024px) {
 		.slidey a.menu {
@@ -173,6 +177,12 @@ section.content {
 		font-size: .6rem;
 		border-radius: 3px;
 		border: 1px solid rgba(51,71,61,0.1);
+	}
+	#search button[type="submit"] {
+		background: #C38596;
+	}
+	#search button[type="submit"]:hover {
+		background: #68ADC3;
 	}
 
 nav.top-nav a {
