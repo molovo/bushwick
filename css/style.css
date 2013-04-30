@@ -262,21 +262,25 @@ a.buttonlink, a[title="pdf"], a[title="file"], a[title="audio"], button {
 	     -o-transition: background .15s ease-in-out;
 	        transition: background .15s ease-in-out;
 }
+button {
+	height: auto;
+	padding: .75em 1.5em;
+}
 	a.buttonlink:hover, a[title="pdf"]:hover, a[title="file"]:hover, a[title="audio"]:hover, button:hover {
 		background: #68ADC3;
 		color: white;
 	}
-	a[title="pdf"], a[title="file"], a[title="audio"] {
+	a[title="pdf"], a[title="file"], a[title="audio"], section.comments button {
 		padding-left: 3em;
 		position: relative;
 	}
-	a[title="pdf"]:before, a[title="file"]:before, a[title="audio"]:before {
+	a[title="pdf"]:before, a[title="file"]:before, a[title="audio"]:before, section.comments button:before {
 		font-family: "icomoon";
 		position: absolute;
 		top: .3em;
 		left: 1.25em;
 	}
-	a[title="pdf"]:hover:before, a[title="file"]:hover:before, a[title="audio"]:hover:before {
+	a[title="pdf"]:hover:before, a[title="file"]:hover:before, a[title="audio"]:hover:before, section.comments button:hover:before {
 		text-decoration: none;
 	}
 	a[title="pdf"]:before {
@@ -287,6 +291,11 @@ a.buttonlink, a[title="pdf"], a[title="file"], a[title="audio"], button {
 	}
 	a[title="audio"]:before {
 		content: 'A';
+	}
+	section.comments button:before {
+		content: 'E';
+		top: .8em;
+		left: 1.25em;
 	}
 
 footer#bottom {
@@ -306,12 +315,12 @@ section.content ul {
     margin:0 0 1.5em;
 }
 
-section.content ul:not(.items) li {
+section.content ul:not(.items):not(.commentlist) li {
     padding-left: 3em;
     text-indent: -.7em;
 }
 
-section.content ul:not(.items) li:before {
+section.content ul:not(.items):not(.commentlist) li:before {
     content: "• ";
     color: #C38596; /* or whatever color you prefer */
 }
@@ -426,6 +435,38 @@ code {
 	font-size: .75em;
 }
 
+section.comments label {
+	font-size: .75em;
+	font-weight: 700;
+}
+
+section.comments input,
+section.comments textarea {
+		width: 100%;
+		max-width: 18em;
+		padding: .75em;
+		font-size: .75em;
+		border-radius: 3px;
+		border: 1px solid rgba(51,71,61,0.1);
+		display: block;
+}
+section.comment textarea {
+	min-height: 9em;
+}
+
+section.comments button[type="submit"] {
+	font-weight: 400;
+}
+
+ul.commentlist {
+	border-top: 1px solid rgba(51,71,61,0.05);
+}
+
+ul.commentlist li {
+	padding: 1.5em 0;
+	border-bottom: 1px solid rgba(51,71,61,0.05);
+}
+
 .icon, a.icon, nav a.icon, .sidebar nav a.icon {
 	font-family: 'icomoon';
 	font-weight: 400;
@@ -442,6 +483,10 @@ code {
 		url('../fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+.remove-bottom {
+	margin-bottom: 0;
 }
 
 /* IE Overrides */

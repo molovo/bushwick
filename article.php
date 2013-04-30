@@ -20,26 +20,31 @@
 		</section>
 
 		<?php if(comments_open()): ?>
-		<section class="comments">
+		<section class=" grid 1of1 content comments">
+			<h3>Comments</h3>
+
 			<?php if(has_comments()): ?>
 			<ul class="commentlist">
 				<?php $i = 0; while(comments()): $i++; ?>
 				<li class="comment" id="comment-<?php echo comment_id(); ?>">
 					<div class="wrap">
-						<h2><?php echo comment_name(); ?></h2>
-						<time><?php echo relative_time(comment_time()); ?></time>
+						<h6 class="remove-bottom"><?php echo comment_name(); ?></h6>
+						<small class="ralign" style="float: right;"><time><?php echo relative_time(comment_time()); ?></time><br /><?php echo $i; ?></small>
 
 						<div class="content">
 							<?php echo comment_text(); ?>
 						</div>
 
-						<span class="counter"><?php echo $i; ?></span>
+						<small class="counter"></small>
 					</div>
 				</li>
 				<?php endwhile; ?>
 			</ul>
 			<?php endif; ?>
 
+			<div class="grid 1of1"></div>
+
+			<h3>Leave a Comment</h3>
 			<form id="comment" class="commentform wrap" method="post" action="<?php echo comment_form_url(); ?>#comment">
 				<?php echo comment_form_notifications(); ?>
 
