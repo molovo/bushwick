@@ -235,7 +235,7 @@ aside.tldr p {
 		padding-top: .1em;
 	}
 
-a.buttonlink, a[title="pdf"], a[title="audio"], button {
+a.buttonlink, a[title="pdf"], a[title="file"], a[title="audio"], button {
 	background: #774553;
 	padding: .25em 1.5em .3em;
 	border-radius: 3px;
@@ -252,25 +252,28 @@ a.buttonlink, a[title="pdf"], a[title="audio"], button {
 	     -o-transition: background .15s ease-in-out;
 	        transition: background .15s ease-in-out;
 }
-	a.buttonlink:hover, a[title="pdf"]:hover, a[title="audio"]:hover, button:hover {
+	a.buttonlink:hover, a[title="pdf"]:hover, a[title="file"]:hover, a[title="audio"]:hover, button:hover {
 		background: #68ADC3;
 		color: white;
 	}
-	a[title="pdf"], a[title="audio"] {
+	a[title="pdf"], a[title="file"], a[title="audio"] {
 		padding-left: 3em;
 		position: relative;
 	}
-	a[title="pdf"]:before, a[title="audio"]:before {
+	a[title="pdf"]:before, a[title="file"]:before, a[title="audio"]:before {
 		font-family: "icomoon";
 		position: absolute;
 		top: .3em;
 		left: 1.25em;
 	}
-	a[title="pdf"]:hover:before, a[title="audio"]:hover:before {
+	a[title="pdf"]:hover:before, a[title="file"]:hover:before, a[title="audio"]:hover:before {
 		text-decoration: none;
 	}
 	a[title="pdf"]:before {
 		content: 'P';
+	}
+	a[title="file"]:before {
+		content: 'D';
 	}
 	a[title="audio"]:before {
 		content: 'A';
