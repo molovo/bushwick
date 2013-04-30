@@ -2,7 +2,7 @@
 
 ### A theme for Anchor CMS
 
-Bushwick is a lightweight, reponsive blogging theme, designed to show beautiful content alongside beautiful imagery.
+Bushwick is a lightweight, responsive blogging theme, designed to show beautiful content alongside beautiful imagery.
 
 View a sample at <http://bushwick.molovo.co.uk>, or grab the code from [Github](http://github.com/molovo/bushwick)
 
