@@ -66,7 +66,7 @@ hr {
 	.sidebar > .container {
 		position: absolute;
 		bottom: 3em;
-		left: 5%;
+		left: 2.5%;
 	}
 	@media (max-width: 700px) {
 		.sidebar > .container {
@@ -78,7 +78,7 @@ hr {
 		top: 0px;
 		width: 100%;
 		margin: 0 auto;
-		padding: 1.5em 3em;
+		padding: 1.5em 1.5em;
 	}
 	.sidebar nav.sidebar-nav a {
 		font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

@@ -134,6 +134,11 @@ p, ul, ol, dl, blockquote {
     margin: 0 auto;
     letter-spacing: -.25em; /* Fixes spacing issues with display: inline-block; */
   }
+    @media (max-width: 700px) {
+      .container {
+        width: 100%;
+      }
+    }
 
 
   /* Reset letter spacing for elements in container but not in grid */
