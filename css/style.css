@@ -123,6 +123,13 @@ hr {
 	}
 }
 
+.sidebar-content {
+	letter-spacing: -.4em;
+}
+.sidebar-content h1 {
+	letter-spacing: 0;
+}
+
 section.content {
 	max-width: 32em;
 }
