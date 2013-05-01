@@ -133,6 +133,8 @@ section.content {
 	width: 100%;
 	position: relative;
 	color: rgb(51,71,61);
+	max-height: 100%;
+	overflow-y: auto;
 }
 	@media (max-width: 1023px) {
 		.slidey {
