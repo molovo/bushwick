@@ -68,6 +68,11 @@ hr {
 		bottom: 3em;
 		left: 5%;
 	}
+	@media (max-width: 700px) {
+		.sidebar > .container {
+			bottom: 0;
+		}
+	}
 	.sidebar nav.sidebar-nav {
 		position: absolute;
 		top: 0px;
