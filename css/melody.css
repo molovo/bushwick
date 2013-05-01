@@ -88,6 +88,11 @@ p, ul, ol, dl, blockquote {
     em { font-style: italic; }
     strong { font-weight: 600; }
     small { font-size: .6em; line-height: 1.5em; font-family: "Lato", "proxima-nova", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+      @media (max-width: 700px) {
+        small {
+          font-size: .75em;
+        }
+      }
 
     .center { text-align: center; }
     .lalign { text-align: left; }
