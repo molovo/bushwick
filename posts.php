@@ -29,7 +29,7 @@
 
 			<?php $i = 0; while(posts()): ?>
 			<li>
-				<article class="article-preview">
+				<article class="article-preview force-grid">
 					<div class="grid 2of3 stick-to-grid remove-padding">
 						<h3 class="remove-bottom">
 							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
