@@ -32,7 +32,7 @@ a, a:visited {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	color: #774553;
-	font-family: "Merriweather";
+	font-family: "Bitter";
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
@@ -358,7 +358,7 @@ section.content ol li {
 }
 
 section.content ol li > p {
-	font-family: "Merriweather", "Skolar", "Georgia", "Times New Roman", serif;
+	font-family: "Bitter", "Skolar", "Georgia", "Times New Roman", serif;
 	color: rgb(51,71,61);
 	font-size: 1rem;
 	font-weight: 400;

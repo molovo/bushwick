@@ -48,7 +48,7 @@
 ======================================= */
 
 html, body {
-  font: 20px/1.5em "Merriweather", "Skolar", "ff-tisa-web-pro", "Georgia", "Times New Roman", serif;
+  font: 22px/1.5em "Bitter", "Skolar", "ff-tisa-web-pro", "Georgia", "Times New Roman", serif;
 }
 
 h1 {
@@ -93,6 +93,7 @@ p, ul, ol, dl, blockquote {
           font-size: .75em;
         }
       }
+    time { line-height: 1.5em; }
 
     .center { text-align: center; }
     .lalign { text-align: left; }
@@ -111,13 +112,13 @@ p, ul, ol, dl, blockquote {
 
   @media (max-width: 700px) {
     body {
-      font-size: 85%;
+      font-size: 90%;
     }
   }
 
   @media (max-width: 480px) {
     body {
-      font-size: 80%;
+      font-size: 85%;
     }
   }
 
