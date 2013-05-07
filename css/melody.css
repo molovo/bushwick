@@ -48,7 +48,7 @@
 ======================================= */
 
 html, body {
-  font: 22px/1.5em "Bitter", "Skolar", "ff-tisa-web-pro", "Georgia", "Times New Roman", serif;
+  font: 400 22px/1.5em "Aleo", "Skolar", "ff-tisa-web-pro", "Georgia", "Times New Roman", serif;
 }
 
 h1 {
@@ -103,6 +103,17 @@ p, ul, ol, dl, blockquote {
 
 /* Adjust font sizes for different screen sizes
 =================================================== */
+  @media (min-width: 1440px) {
+    body {
+      font-size: 120%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    body {
+      font-size: 110%;
+    }
+  }
 
   @media (max-width: 960px) {
     body {

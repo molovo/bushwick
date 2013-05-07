@@ -32,7 +32,7 @@ a, a:visited {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	color: #774553;
-	font-family: "Bitter";
+	font-family: "Aleo";
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a,
@@ -364,7 +364,7 @@ section.content ol li {
 }
 
 section.content ol li > p {
-	font-family: "Bitter", "Skolar", "Georgia", "Times New Roman", serif;
+	font-family: "Aleo", "Skolar", "Georgia", "Times New Roman", serif;
 	color: rgb(51,71,61);
 	font-size: 1rem;
 	font-weight: 400;
@@ -533,4 +533,46 @@ ul.commentlist li {
 	.ie a:hover {
 		color: #68ADC3;
 	}
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/aleo/Aleo-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
 }
