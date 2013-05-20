@@ -20,7 +20,7 @@
 			                <ul role="navigation">
 			                    <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
 			                    <?php if(twitter_account()): ?>
-			                    <li><a href="<?php echo twitter_url(); ?>" target="blank">@<?php echo twitter_account(); ?></a></li>
+			                    <li><a href="<?php echo twitter_url(); ?>" target="_blank">@<?php echo twitter_account(); ?></a></li>
 			                    <?php endif; ?>
 
 			                    <li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin area</a></li>
