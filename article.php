@@ -3,11 +3,13 @@
 		<section class="grid 1of1 content" id="article-<?php echo article_id(); ?>">
 			<h1><?php echo article_title(); ?></h1>
 
+			<?php if (article_description()): ?>
 			<aside class="tldr">
 				<p>
 					<?php echo article_description(); ?>
 				</p>
 			</aside>
+			<?php endif ?>
 
 			<article>
 				<?php echo article_markdown(); ?>
