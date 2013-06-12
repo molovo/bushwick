@@ -266,7 +266,7 @@ aside.tldr p {
 		padding-top: .1em;
 	}
 
-a.buttonlink, a[title="pdf"], a[title="file"], a[title="audio"], button {
+a.buttonlink, a[title="pdf"], a[title="file"], a[title="audio"], a[title="button"], button {
 	background: #774553;
 	padding: .25em 1.5em .3em;
 	border-radius: 3px;
