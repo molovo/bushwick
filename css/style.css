@@ -287,7 +287,7 @@ button {
 	height: auto;
 	padding: .75em 1.5em;
 }
-	a.buttonlink:hover, a[title="pdf"]:hover, a[title="file"]:hover, a[title="audio"]:hover, button:hover {
+	a.buttonlink:hover, a[title="pdf"]:hover, a[title="file"]:hover, a[title="audio"]:hover, a[title="button"]:hover, button:hover {
 		background: #68ADC3;
 		color: white;
 	}
