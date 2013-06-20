@@ -51,10 +51,10 @@
 					color: #F7F2CB;
 				}
 		</style>
-		<?php if (article_custom_field('sidebar_image')): ?>
+		<?php if (($img = article_custom_field('sidebar_image')) || ($img = page_custom_field('sidebar_image'))): ?>
 			<style>
 				.sidebar {
-					background: url("<?php echo article_custom_field('sidebar_image'); ?>") center no-repeat;
+					background: url("<?php echo $img; ?>") center no-repeat;
 					background-size: cover;
 					color: white;
 					text-shadow: 0px 1px 5px rgba(0,0,0,0.3);
